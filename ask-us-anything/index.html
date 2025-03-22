@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connectlift Mate – Your Questions, Answered.</title>
+    <meta name="description"
+        content="Find answers to all your Connectlift Mate questions, upcoming features, and troubleshooting tips.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Connectlift Mate Team">
+    <meta property="og:title" content="Connectlift Mate – Your Questions, Answered.">
+    <meta property="og:description"
+        content="Your complete guide to using Connectlift Mate. Honest answers, future features, and real-world support.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://connectliftmate.com/help">
+    <meta property="og:image" content="https://connectliftmate.com/assets/banner.png">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #edf1ff, #dbe6ff);
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 4rem 1.5rem;
+        }
+
+        .container {
+            background: #ffffff;
+            max-width: 900px;
+            width: 100%;
+            padding: 3rem 2rem;
+            border-radius: 24px;
+            box-shadow: 0 25px 45px rgba(85, 110, 255, 0.1);
+            border: 1px solid #c9d7ff;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: #2a2a40;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .faq-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+        }
+
+        .faq-item {
+            background: #f8faff;
+            padding: 1.2rem 1.5rem;
+            border-radius: 14px;
+            border: 1px solid #e1e7ff;
+            box-shadow: 0 12px 30px rgba(85, 110, 255, 0.05);
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .faq-item:hover {
+            background: #eef2ff;
+            box-shadow: 0 15px 35px rgba(85, 110, 255, 0.08);
+        }
+
+        .faq-question {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #2a2a40;
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-answer {
+            font-size: 1rem;
+            color: #3f3f55;
+            line-height: 1.6;
+            margin-top: 0.5rem;
+            display: none;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+            opacity: 1;
+        }
+
+        .faq-toggle {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #3b5bdb;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .faq-item.active .faq-toggle {
+            transform: rotate(180deg);
+        }
+
+        .footer {
+            font-size: 0.9rem;
+            color: #777;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .back-home {
+            display: block;
+            text-align: center;
+            margin-top: 2rem;
+            background: #3b5bdb;
+            color: #fff;
+            padding: 10px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .back-home:hover {
+            background: #3249b5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1><span style="color:#3b5bdb;">Connectlift Mate</span> – Your Questions, Answered.
+            <input type="text" id="faqSearch" placeholder="Search your question..."
+                style="width:75%; padding:14px 16px; font-size:1rem; border:1px solid #d0d7f9; border-radius:12px; margin-bottom:2rem; box-shadow:0 10px 20px rgba(85,110,255,0.05);">
+        </h1>
+
+
+        <div class="faq-container">
+            <div class="faq-item">
+                <p class="faq-question">What if nothing works at all suddenly? <span class="faq-toggle">+</span></p>
+                <p class="faq-answer">Honestly? Just try refreshing the page. Most issues from LinkedIn field glitches
+                    to minor extension hiccups get fixed with a quick refresh. It’s the magic reset button 🔄.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">Why is my note not pasting into LinkedIn? <span class="faq-toggle">+</span></p>
+                <p class="faq-answer">Make sure the LinkedIn message box is visible and editable. If needed, refresh the
+                    page before clicking “Insert This.”</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">Do I need to log in or sign up? <span class="faq-toggle">+</span></p>
+                <p class="faq-answer">No login or sign-up needed. It works entirely in your browser without any account
+                    or cloud sync.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">Can I reorder my saved notes? <span class="faq-toggle">+</span></p>
+                <p class="faq-answer">Drag-and-drop support is coming soon! Currently, new notes appear at the top.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">Will there be dark mode? <span class="faq-toggle">+</span></p>
+                <p class="faq-answer">Yes! Light/Dark/Auto theme selection will be available in the next update.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">How do I request a new feature? <span class="faq-toggle">+</span></p>
+                <p class="faq-answer">We love hearing your ideas! Email us at <em>support@connectliftmate.com</em> to
+                    suggest features.</p>
+            </div>
+            <div class="faq-item">
+                <p class="faq-question">Can I pin my favorite templates? <span class="faq-toggle">+</span></p>
+                <p class="faq-answer">This feature is coming soon! You’ll soon be able to star or pin notes you use most
+                    often. <br>Currently, this is only available for <strong>Connection Notes</strong>. We're working on
+                    bringing it to <strong>Message Templates</strong> too.</p>
+            </div>
+
+
+            <div class="faq-item">
+                <p class="faq-question">Can I export my data to Google Drive? <span class="faq-toggle">+</span></p>
+                <p class="faq-answer">Currently no, but we’re exploring future options for backup/export to cloud safely
+                    with user consent.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">Why doesn’t the note auto-insert sometimes? <span class="faq-toggle">+</span>
+                </p>
+                <p class="faq-answer">LinkedIn UI changes may block insertion. Please refresh or manually click insert
+                    again.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">Will Connectlift Mate stay free forever? <span class="faq-toggle">+</span></p>
+                <p class="faq-answer">Yes, core features will always be free. If we add advanced premium tools, basic
+                    productivity will still remain free.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">Can I use keyboard shortcuts for faster access? <span
+                        class="faq-toggle">+</span></p>
+                <p class="faq-answer">Keyboard shortcut functionality is in testing. We’ll release it soon for power
+                    users.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">Is my LinkedIn data completely safe? <span class="faq-toggle">+</span></p>
+                <p class="faq-answer">Yes! We never access your LinkedIn login, cookies, or messages. The extension only
+                    interacts with the visible message input box.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">Can I organize templates by categories? <span class="faq-toggle">+</span></p>
+                <p class="faq-answer">Category and tag-based organization is planned for future versions. Right now,
+                    notes are sorted by date added.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">Will I get a notification when features are updated? <span
+                        class="faq-toggle">+</span></p>
+                <p class="faq-answer">You’ll soon see a “What’s New” tab inside the extension for release notes and
+                    feature updates.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">Can I use Connectlift Mate in other languages? <span class="faq-toggle">+</span>
+                </p>
+                <p class="faq-answer">We’re planning to add multilingual support soon to make Connectlift Mate globally
+                    user-friendly.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">Why is Connectlift Mate not showing on all LinkedIn pages? <span
+                        class="faq-toggle">+</span></p>
+                <p class="faq-answer">The extension is designed to work only on message or note fields. Some profile
+                    layouts may not support it directly.</p>
+            </div>
+            <div class="faq-item">
+                <p class="faq-question">Why does it sometimes feel like the note got pasted but nothing shows up? <span
+                        class="faq-toggle">+</span></p>
+                <p class="faq-answer">That’s usually a LinkedIn rendering delay. Just click once inside the box or
+                    refresh the page it’ll appear immediately.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">Is it okay if I customize the note after pasting? <span
+                        class="faq-toggle">+</span></p>
+                <p class="faq-answer">Of course! The note is just a starting point feel free to personalize it. The
+                    pasted content is fully editable.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">Can this extension harm my LinkedIn account or get me restricted? <span
+                        class="faq-toggle">+</span></p>
+                <p class="faq-answer">No. It does not automate anything or violate LinkedIn rules. You are always the
+                    one clicking and sending. Safe and human-friendly.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">Sometimes the insert button just doesn’t work is it a bug? <span
+                        class="faq-toggle">+</span></p>
+                <p class="faq-answer">Not always. It might be LinkedIn’s field not loading fully. Refresh the page or
+                    reopen the modal that usually fixes it.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">Why does editing a saved note sometimes feel weird or laggy? <span
+                        class="faq-toggle">+</span></p>
+                <p class="faq-answer">If your note is long or has line breaks/emojis, the browser may lag a little while
+                    editing. Just try refreshing once.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">What happens if I click “Insert This” but nothing pastes? <span
+                        class="faq-toggle">+</span></p>
+                <p class="faq-answer">That likely means the LinkedIn message input field wasn’t active. Try clicking
+                    inside the box or refreshing the page.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">Can I disable the default note behavior completely? <span
+                        class="faq-toggle">+</span></p>
+                <p class="faq-answer">Yes. Just go to Settings and uncheck “Use Default Note Automatically” you can
+                    then manually insert notes only when needed.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">Why don’t you offer login and sync across devices? <span
+                        class="faq-toggle">+</span></p>
+                <p class="faq-answer">Because we value your privacy. Everything stays offline and simple. No signups, no
+                    sync, no surveillance.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">Can I reset the extension to default settings? <span class="faq-toggle">+</span>
+                </p>
+                <p class="faq-answer">Yes go to Settings > Clear All Notes & Messages. That gives you a clean slate.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">Is Connectlift Mate only useful for job seekers? <span
+                        class="faq-toggle">+</span></p>
+                <p class="faq-answer">Not at all! It’s helpful for founders, marketers, recruiters, freelancers anyone
+                    doing LinkedIn outreach consistently.</p>
+            </div>
+        </div>
+        <hr style="margin:3rem 0; border-top:1px solid #ccc;">
+
+        <div
+            style="margin-top:2rem; padding:2rem; background:#f4f7ff; border-radius:16px; border:1px solid #ccd9ff; box-shadow:0 10px 30px rgba(85,110,255,0.07);">
+            <h2 style="font-size:1.4rem; color:#2a2a40; margin-bottom:1rem;">🚀 Feature Voting & Roadmap</h2>
+            <p style="font-size:1rem; color:#3f3f55; margin-bottom:1rem;">
+                We're building Connectlift Mate based on what real users need. Got a cool idea you'd love to see?
+            </p>
+            <ul style="list-style:disc; padding-left:1.5rem; color:#3f3f55; margin-bottom:1rem;">
+                <li>✅ Pin/Favorite Templates</li>
+                <li>✅ Drag & Reorder Notes</li>
+                <li>✅ Keyboard Shortcuts</li>
+                <li>✅ Multilingual Support</li>
+                <li>✅ Theme Customization (Dark/Light)</li>
+                <li>✅ Message Strength Analyzer</li>
+            </ul>
+            <div
+                style="margin-top:2rem; padding:1.5rem 2rem; background: #f4f7ff; border: 1px solid #9ba9db; border-radius: 16px; box-shadow: 0 10px 30px rgba(85, 110, 255, 0.08);">
+                <h3 style="font-size: 1.2rem; color: #070747; margin-bottom: 0.5rem;">💡 Have an idea to improve
+                    Connectlift Mate?</h3>
+                <p style="font-size:1rem; color:#3f3f55; margin: 0 0 0.8rem;">
+                    We’d love to hear it your feedback helps shape our roadmap!
+                </p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScAyeCVITJtSJjizOIjWW0dXHyd9mzEgLkvRCcZsrt1BtYyeQ/viewform?usp=sharing"
+                    target="_blank"
+                    style="display:inline-block; background:#3b5bdb; color:#fff; padding:10px 18px; border-radius:8px; text-decoration:none; font-weight:600; box-shadow:0 6px 15px rgba(59,91,219,0.2); transition:all 0.3s ease;">
+                    📩 Submit your idea
+                </a>
+            </div>
+
+
+        </div>
+
+        <a href="https://connectliftmate.com" class="back-home">← Back to Home</a>
+
+        <div class="footer">
+            Last updated: March, 2025<br>
+            © 2025 Connectlift Mate. All rights reserved.
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.addEventListener('click', () => {
+                item.classList.toggle('active');
+            });
+        });
+        // Search FAQ Logic
+        const searchInput = document.getElementById('faqSearch');
+        searchInput.addEventListener('input', function () {
+            const filter = this.value.toLowerCase();
+            const items = document.querySelectorAll('.faq-item');
+            items.forEach(item => {
+                const question = item.querySelector('.faq-question').innerText.toLowerCase();
+                const answer = item.querySelector('.faq-answer').innerText.toLowerCase();
+                if (question.includes(filter) || answer.includes(filter)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>
